@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": "src/",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/ui/*": ["components/shadcn/*"],
+      "@/features/*": ["features/*"],
+      "@/utils/*": ["utils/*"],
+      "@/libs/*": ["libs/*"],
+      "@/types/*": ["types/*"],
+      "@/providers/*": ["providers/*"],
+      "@/shadcn/*": ["utils/shadcn/*"],
+      "@/hooks/*": ["hooks/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/providers/ExcalidrawWrapper.tsx",
+    "src/components/shared/CustomMenubar"
+, "src/features/blockly-phaser/blockly/BlocklyEditor.js"  ],
+  "exclude": ["node_modules"]
+}
