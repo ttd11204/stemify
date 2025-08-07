@@ -22,7 +22,7 @@ export default function AuthStatusMenu() {
   const handleSignOut = async () => {
     try {
       // Gọi API logout của backend
-      await fetch('http://localhost:5000/account/logout', {
+      await fetch(`${process.env.NEXT_PUBLIC_IDENTITY_SERVER_URL}/account/logout`, {
         method: 'GET',
         credentials: 'include'
       })
